@@ -1,0 +1,8 @@
+yaml
+deployment:
+  server: "your_server_address"
+  port: 8000
+  path: "/path/to/deploy"
+  environment:
+    - name: "ENV_VAR_NAME"
+      value: "ENV_VAR_VALUE"
