@@ -1,0 +1,9 @@
+flask==2.0.2
+requests==2.26.0
+pytest==6.2.5
+flake8==4.0.1
+pylint==2.12.2
+mypy==0.910
+sphinx==4.2.0
+mkdocs==1.2.3
+docker==5.0.3
