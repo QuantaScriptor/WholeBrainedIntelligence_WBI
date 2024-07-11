@@ -25,6 +25,11 @@ jobs:
         pip install flake8
         flake8 .
 
+    - name: Security check with Bandit
+      run: |
+        pip install bandit
+        bandit -r .
+
     - name: Test with pytest
       run: |
         pip install pytest
