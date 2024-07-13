@@ -1,27 +1,55 @@
-![DALL·E 2024-07-01 07 02 58 - A banner image for a GitHub repository named 'WholeBrainedIntelligence (WBI)', featuring an abstract brain design with interconnected nodes  The nodes](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
+markdown
+
 # WholeBrainedIntelligence (WBI)
 
+![DALL·E 2024-07-01 07 02 58 - A banner image for a GitHub repository named 'WholeBrainedIntelligence (WBI)', featuring an abstract brain design with interconnected nodes  The nodes](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
 ![Contributions](https://img.shields.io/github/contributors/QuantaScriptor/WholeBrainedIntelligence_WBI)
+[![GitHub issues](https://img.shields.io/github/issues/QuantaScriptor/WholeBrainedIntelligence_WBI)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/issues)
+[![GitHub forks](https://img.shields.io/github/forks/QuantaScriptor/WholeBrainedIntelligence_WBI)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/network)
+[![GitHub stars](https://img.shields.io/github/stars/QuantaScriptor/WholeBrainedIntelligence_WBI)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/stargazers)
+[![GitHub license](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/blob/main/LICENSE)
 [![CodeQL](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/actions/workflows/codeql.yml/badge.svg)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/actions/workflows/codeql.yml)
-© Reece Dixon - All rights reserved.
-
-CONFIDENTIALITY NOTICE: This information is the exclusive property of Reece Dixon and is provided under strict confidentiality. Unauthorized use, reproduction, or distribution is prohibited.
-
-## Introduction
-The WholeBrainedIntelligence (WBI) system is designed to emulate various cognitive processes by integrating multiple specialized modules. It aims to advance artificial intelligence capabilities through a comprehensive approach that mirrors human cognition. This project is based on the Unified Theory of Mind (UTOM) and incorporates modules for self-awareness, heuristic pattern recognition, counterfactual simulation, value affection, empathic interaction, and learning from experience.
+WholeBrainedIntelligence (WBI) is an advanced AI system designed to integrate various cognitive functions such as consciousness, intuition, imagination, emotion, and social awareness into a unified model. This project aims to create an AI entity that synthesizes these disparate faculties into a coherent, internally consistent whole.
 
 ## Table of Contents
+
+- [Overview](#overview)
+- [Key Features](#key-features)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Architecture](#architecture)
 - [Modules](#modules)
-- [Examples](#examples)
+  [Examples](#examples)
 - [Contributing](#contributing)
+- [Security](#security)
 - [License](#license)
+
+## Overview
+
+WholeBrainedIntelligence (WBI) aims to push the boundaries of AI by creating a system that mimics the integrative cognitive faculties of the human brain. By incorporating modules for self-awareness, heuristic pattern recognition, counterfactual simulation, emotional intelligence, and social cognition, WBI represents a holistic approach to artificial general intelligence.
+
+## Key Features
+
+- **Integrative Cognitive Architecture**: Combines neural networks with symbolic reasoning for seamless data-driven and logic-based tasks.
+- **Emotional Intelligence**: Real-time emotional recognition and adaptive response.
+- **Consciousness Emulation**: Self-reflective capabilities through a meta-cognition layer.
+- **Dynamic Creativity Engine**: Generates innovative ideas using advanced generative models.
+- **Advanced Social Cognition**: Enhanced social interactions with Theory of Mind and interactive narratives.
+- **Bio-Inspired Learning**: Efficient learning processes inspired by biological systems.
+- **Ethical and Transparent AI**: Operates with high ethical standards and transparency.
+- **Distributed Computing**: Scalable performance with multi-GPU support.
+- **Hyperparameter Tuning**: Automated optimization for better model performance.
+- **Self-Supervised Learning**: Improved learning from unlabeled data.
+- **Meta-Learning**: Adaptable to new tasks with minimal data.
+- **NLP Enhancement**: Advanced language processing capabilities.
+- **Reinforcement Learning**: Integration of adaptive decision-making.
 
 ## Installation
 
+1. **Clone the repository**:
+   
 ### Prerequisites
 - Python 3.8 or higher
 - Git
