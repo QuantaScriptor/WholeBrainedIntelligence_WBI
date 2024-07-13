@@ -1,4 +1,3 @@
-python
 import unittest
 import subprocess
 
