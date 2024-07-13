@@ -3,6 +3,8 @@ markdown
 # WholeBrainedIntelligence (WBI)
 
 ![DALL·E 2024-07-01 07 02 58 - A banner image for a GitHub repository named 'WholeBrainedIntelligence (WBI)', featuring an abstract brain design with interconnected nodes  The nodes](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
+
+
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
 ![Contributions](https://img.shields.io/github/contributors/QuantaScriptor/WholeBrainedIntelligence_WBI)
@@ -21,7 +23,7 @@ WholeBrainedIntelligence (WBI) is an advanced AI system designed to integrate va
 - [Usage](#usage)
 - [Architecture](#architecture)
 - [Modules](#modules)
-  [Examples](#examples)
+- [Examples](#examples)
 - [Contributing](#contributing)
 - [Security](#security)
 - [License](#license)
