@@ -4,7 +4,7 @@
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
 ![Contributions](https://img.shields.io/github/contributors/QuantaScriptor/WholeBrainedIntelligence_WBI)
-
+[![CodeQL](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/actions/workflows/codeql.yml/badge.svg)](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/actions/workflows/codeql.yml)
 © Reece Dixon - All rights reserved.
 
 CONFIDENTIALITY NOTICE: This information is the exclusive property of Reece Dixon and is provided under strict confidentiality. Unauthorized use, reproduction, or distribution is prohibited.
