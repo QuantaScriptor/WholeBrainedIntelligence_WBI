@@ -1,6 +1,7 @@
 # WholeBrainedIntelligence (WBI)
 
-![WholeBrainedIntelligence (WBI) Banner](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/raw/main/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
+![![WholeBrainedIntelligence (WBI) Banner][wbiBanner]
+](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
@@ -138,3 +139,6 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 ## License
 
 This project is licensed under the RAIL License. See the [LICENSE](LICENSE) file for details.
+
+
+[wbiBanner]: https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/raw/main/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769
