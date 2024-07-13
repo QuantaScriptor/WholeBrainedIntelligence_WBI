@@ -1,5 +1,3 @@
-markdown
-
 # WholeBrainedIntelligence (WBI)
 
 ![DALL·E 2024-07-01 07 02 58 - A banner image for a GitHub repository named 'WholeBrainedIntelligence (WBI)', featuring an abstract brain design with interconnected nodes  The nodes](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
