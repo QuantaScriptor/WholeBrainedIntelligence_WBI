@@ -1,7 +1,6 @@
 # WholeBrainedIntelligence (WBI)
 
-![DALL·E 2024-07-01 07 02 58 - A banner image for a GitHub repository named 'WholeBrainedIntelligence (WBI)', featuring an abstract brain design with interconnected nodes  The nodes](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
-
+![WholeBrainedIntelligence (WBI) Banner](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/raw/main/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
@@ -49,27 +48,47 @@ WholeBrainedIntelligence (WBI) aims to push the boundaries of AI by creating a s
 ## Installation
 
 1. **Clone the repository**:
-   
+
 ### Prerequisites
+
 - Python 3.8 or higher
 - Git
 - Virtual environment tool (e.g., `venv`, `virtualenv`)
 - Required libraries (listed in `requirements.txt`)
 
 ### Steps
+
 1. Clone the repository:
+
     ```bash
     git clone https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI.git
     cd WholeBrainedIntelligence_WBI
     ```
 
 2. Set up the virtual environment:
+
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+3. Install the required libraries:
+
+    ```bash
+    pip install -r requirements.txt
+    ```gence_WBI.git
+    cd WholeBrainedIntelligence_WBI
+    ```
+
+2. Set up the virtual environment:
+
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
     ```
 
 3. Install dependencies:
+
     ```bash
     pip install -r requirements.txt
     ```
@@ -78,11 +97,13 @@ WholeBrainedIntelligence (WBI) aims to push the boundaries of AI by creating a s
     Create a `.env` file in the root directory and add necessary environment variables.
 
 5. Run the initial setup script:
+
     ```bash
     python setup.py
     ```
 
 ## Usage
+
 Initialize the WBI system and use its modules:
 
 ```python
@@ -98,6 +119,7 @@ wbi_system.learning_from_experience.collect_experiences()
 ```
 
 ## Modules
+
 - **Self-Awareness Module**: Provides self-monitoring and reflective capabilities.
 - **Heuristic Pattern Recognition Module**: Detects patterns and anomalies in data.
 - **Counterfactual Simulation Module**: Simulates alternate scenarios for decision-making.
@@ -106,10 +128,13 @@ wbi_system.learning_from_experience.collect_experiences()
 - **Learning from Experience Module**: Enhances learning from past experiences.
 
 ## Examples
+
 Refer to the `examples` directory for comprehensive examples of using the WBI system.
 
 ## Contributing
+
 We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING.md) for details on how to get started.
 
 ## License
+
 This project is licensed under the RAIL License. See the [LICENSE](LICENSE) file for details.
