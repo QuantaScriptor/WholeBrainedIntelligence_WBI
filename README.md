@@ -1,11 +1,6 @@
 # WholeBrainedIntelligence (WBI)
 
-<<<<<<< HEAD
-![![WholeBrainedIntelligence (WBI) Banner][wbiBanner]
-](https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI/assets/170899992/7898afcc-b9d5-4692-a69a-0d56d4218769)
-=======
 ![WBI_Banner](https://github.com/user-attachments/assets/d9523490-ff86-4522-89d8-5618b68f1357)
->>>>>>> cd6982a5ef0ebca5a9f74d577ceb2248ad56d7dd
 
 ![Build Status](https://img.shields.io/github/actions/workflow/status/QuantaScriptor/WholeBrainedIntelligence_WBI/ci.yml)
 ![License](https://img.shields.io/github/license/QuantaScriptor/WholeBrainedIntelligence_WBI)
