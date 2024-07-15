@@ -1,1 +1,16 @@
 project/
+
+# Ignore specific scripts
+scripts/bias_mitigation.py
+scripts/blockchain_integration.py
+scripts/chatbot.py
+scripts/data_encryption.py
+scripts/explainability.py
+scripts/image_video_analysis.py
+scripts/neurosymbolic_ai.py
+scripts/penetration_testing.py
+scripts/personalized_learning.py
+scripts/predictive_maintenance.py
+scripts/quantum_integration.py
+scripts/recommendation_system.py
+scripts/synthetic_data_generation.py
