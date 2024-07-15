@@ -1,0 +1,74 @@
+name: Manage Repository
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at midnight
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  code_quality:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8
+
+    - name: Run Flake8
+      run: |
+        flake8 .
+
+  dependency_updates:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Dependabot
+      uses: dependabot/dependabot-script@v1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        directory: "/"
+
+  generate_report:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+
+    - name: Generate Report
+      run: |
+        python generate_report.py
+
+  notify_collaborators:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Send Notifications
+      run: |
+        python notify_collaborators.py
