@@ -1,9 +1,5 @@
 # Architecture
 
-© Reece Dixon - All rights reserved.
-
-CONFIDENTIALITY NOTICE: This information is the exclusive property of Reece Dixon and is provided under strict confidentiality. Unauthorized use, reproduction, or distribution is prohibited.
-
 ## Introduction
 The WholeBrainedIntelligence (WBI) system architecture is designed to emulate various cognitive processes. It consists of multiple modules that work together to provide comprehensive AI capabilities.
 
@@ -19,7 +15,6 @@ The WBI system is composed of the following main components:
 ## Component Interaction
 Each module interacts with others through defined interfaces and data exchanges. The following diagram illustrates the overall architecture and interactions between modules:
 
-![Architecture Diagram](./architecture_diagram.png)
 
 ## Detailed Components
 
