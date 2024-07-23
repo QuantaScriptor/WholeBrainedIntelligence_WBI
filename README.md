@@ -1,3 +1,17 @@
+<!-- 
+    Project: WholeBrainedIntelligence (WBI)
+    Author: Reece Dixon
+    Contact: info@quantascript.com
+    Created: 2023-06-15
+    Last Updated: 2024-06-25
+    License: RAIL License
+    
+    Copyright (c) 2024 Reece Dixon. All rights reserved.
+    
+    This file is part of the WholeBrainedIntelligence (WBI) project. Unauthorized copying,
+    distribution, modification, or any other use is strictly prohibited without prior
+    written consent from the author.
+-->
 # WholeBrainedIntelligence (WBI)
 
 ![WBI_Banner](https://github.com/user-attachments/assets/d9523490-ff86-4522-89d8-5618b68f1357)
@@ -16,76 +30,71 @@
 
 ---
 
-## Whole-Brained Intelligence (WBI)
+# Whole-Brained Intelligence (WBI) - Version 3.0.0
 
-Whole-Brained Intelligence (WBI) integrates advanced technologies such as Quantum Neural Networks, Neuromorphic Computing, Advanced Natural Language Processing, and Autonomous Learning to create a highly sophisticated AI system.
+Whole-Brained Intelligence (WBI) integrates advanced technologies like Quantum Neural Networks, Neuromorphic Computing, Advanced NLP, and Autonomous Learning.
 
-```sh
-# Features
-
+## Features
 - Quantum Neural Networks (QNN)
 - Neuromorphic Computing
-- Advanced Natural Language Processing (NLP)
+- Advanced NLP
 - Autonomous Learning and Adaptation
 - Ethical and Secure AI
-```
-
-## License
-This project is licensed under the RAIL License - see the LICENSE.md file for details.
 
 ## Getting Started
-For setup and usage instructions, refer to the documentation in the `docs/` directory.
+### Prerequisites
+- Python 3.8+
+- pip
 
-```sh
-# Contents 
+### Installation
+1. Clone the repository:
+  ```sh
+   git clone https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI.git
+   cd WholeBrainedIntelligence_WBI
+  ```
 
-- [Setup](docs/setup.md) - Prerequisites and installation instructions.
-- [Usage](docs/usage.md) - Provides examples and information on how to use the system.
-```
+2. Create and activate a virtual environment:
+  ```sh
+  python3 -m venv venv
+  source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`
+  ```
 
-## Overview
-
-Whole-Brained Intelligence (WBI) aims to push the boundaries of AI by creating a system that mimics the integrative cognitive faculties of the human brain. By incorporating modules for self-awareness, heuristic pattern recognition, counterfactual simulation, emotional intelligence, and social cognition, WBI represents a holistic approach to artificial general intelligence.
-
-```sh
-# Key Features
-
-- **Integrative Cognitive Architecture**: Combines neural networks with symbolic reasoning for seamless data-driven and logic-based tasks.
-- **Emotional Intelligence**: Real-time emotional recognition and adaptive response.
-- **Consciousness Emulation**: Self-reflective capabilities through a meta-cognition layer.
-- **Dynamic Creativity Engine**: Generates innovative ideas using advanced generative models.
-- **Advanced Social Cognition**: Enhanced social interactions with Theory of Mind and interactive narratives.
-- **Bio-Inspired Learning**: Efficient learning processes inspired by biological systems.
-- **Ethical and Transparent AI**: Operates with high ethical standards and transparency.
-- **Distributed Computing**: Scalable performance with multi-GPU support.
-- **Hyperparameter Tuning**: Automated optimization for better model performance.
-- **Self-Supervised Learning**: Improved learning from unlabeled data.
-- **Meta-Learning**: Adaptable to new tasks with minimal data.
-- **NLP Enhancement**: Advanced language processing capabilities.
-```
-
-## Installation
-```sh
-1. Python 3.8 or higher
-2. GIT repository clone https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI.git
-3. cd WholeBrainedIntelligence_WBI
-4. pip install -r requirements.txt
-```
+3. Install dependencies:
+  ```sh
+  pip install -r requirements.txt
+  ``` 
 
 ## Usage
-Initialize the WBI system and use its modules:
 
-```python
-from wbi import WBI
+Run the main scripts:
+  ```python
+  from opensource_scripts.neurosymbolic_ai import hybrid_model as neurosymbolic_hybrid_model
+  from opensource_scripts.quantum_integration import hybrid_model as quantum_hybrid_model
+  
+  inputs = [0.5, 0.6]
+  neural_output, symbolic_output = neurosymbolic_hybrid_model(inputs)
+  print(f"Neural network output: {neural_output}")
+  print(f"Symbolic reasoning output: {symbolic_output}")
+  
+  inputs = np.array([0.5, 0.6])
+  result = quantum_hybrid_model(inputs)
+  print(f"Quantum model output: {result}")
+  ```
 
-wbi_system = WBI()
-wbi_system.self_awareness.monitor_state()
-wbi_system.heuristic_pattern_recognition.detect_patterns(data)
-wbi_system.counterfactual_simulation.simulate_scenarios(current_state)
-wbi_system.value_affection.evaluate_values(outcomes)
-wbi_system.empathic_interaction.recognize_emotions(text)
-wbi_system.learning_from_experience.collect_experiences()
-```
+## Testing
+1. Run tests using pytest:
+  ```sh
+  pytest --cov=opensource_scripts tests/
+  ```
+## Docker Deployment
+  Build the Docker image:
+  ```sh
+  docker build -t wbi .
+  ```
+## Run the Docker container:
+  ```sh
+  docker run -p 5000:5000 wbi
+  ```
 
 ---
 
