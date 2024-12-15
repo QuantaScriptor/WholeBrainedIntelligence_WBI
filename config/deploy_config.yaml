@@ -1,8 +1,11 @@
 yaml
 deployment:
-  server: "your_server_address"
-  port: 8000
-  path: "/path/to/deploy"
+  type: "autoscale"
+  port: 3000
+  build:
+    command: "npm run build"
+  start:
+    command: "npm start"
   environment:
-    - name: "ENV_VAR_NAME"
-      value: "ENV_VAR_VALUE"
+    - name: "NODE_ENV"
+      value: "production"

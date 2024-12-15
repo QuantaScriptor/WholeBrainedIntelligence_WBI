@@ -84,15 +84,10 @@ Run the main scripts:
   ```sh
   pytest --cov=opensource_scripts tests/
   ```
-## Docker Deployment
-  Build the Docker image:
-  ```sh
-  docker build -t wbi .
-  ```
-## Run the Docker container:
-  ```sh
-  docker run -p 5000:5000 wbi
-  ```
+## Quick Deploy
+[![Deploy to Replit](https://replit.com/badge/github/QuantaScriptor/WholeBrainedIntelligence_WBI)](https://replit.com/new/github/QuantaScriptor/WholeBrainedIntelligence_WBI)
+
+Click the button above to instantly deploy this project to Replit!
 
 ---
 
