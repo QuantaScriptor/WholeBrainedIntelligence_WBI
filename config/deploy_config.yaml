@@ -1,9 +1,9 @@
 
 deployment:
   type: "autoscale"
-  port: 8080
+  port: 3000
   start:
-    command: "python main.py"
+    command: "npm run start"
   environment:
-    - name: "PYTHON_ENV"
+    - name: "NODE_ENV"
       value: "production"
