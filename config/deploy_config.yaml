@@ -1,11 +1,9 @@
-yaml
+
 deployment:
   type: "autoscale"
-  port: 3000
-  build:
-    command: "npm run build"
+  port: 8080
   start:
-    command: "npm start"
+    command: "python main.py"
   environment:
-    - name: "NODE_ENV"
+    - name: "PYTHON_ENV"
       value: "production"
