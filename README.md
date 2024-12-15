@@ -59,8 +59,8 @@ python main.py
 ```
 
 3. Access the API:
-- API documentation: http://0.0.0.0:8080/docs
-- API endpoint: http://0.0.0.0:8080/analyze 
+- API documentation: https://wholebrainedintelligence-wbi.replit.app/docs
+- API endpoint: https://wholebrainedintelligence-wbi.replit.app/analyze 
 
 ## Usage
 
