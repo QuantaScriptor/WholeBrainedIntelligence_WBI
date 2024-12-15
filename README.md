@@ -46,23 +46,21 @@ Whole-Brained Intelligence (WBI) integrates advanced technologies like Quantum N
 - Python 3.8+
 - pip
 
-### Installation
-1. Clone the repository:
-  ```sh
-   git clone https://github.com/QuantaScriptor/WholeBrainedIntelligence_WBI.git
-   cd WholeBrainedIntelligence_WBI
-  ```
+### Installation and Usage
 
-2. Create and activate a virtual environment:
-  ```sh
-  python3 -m venv venv
-  source venv/bin/activate  # On Windows use `venv\\Scripts\\activate`
-  ```
+1. Install dependencies:
+```sh
+pip install -r requirements.txt
+```
 
-3. Install dependencies:
-  ```sh
-  pip install -r requirements.txt
-  ``` 
+2. Run the API server:
+```sh
+python main.py
+```
+
+3. Access the API:
+- API documentation: http://0.0.0.0:8080/docs
+- API endpoint: http://0.0.0.0:8080/analyze 
 
 ## Usage
 
