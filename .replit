@@ -1,13 +1,14 @@
-modules = ["nodejs-20", "python-3.12", "web"]
-run = "uvicorn main:app --host 0.0.0.0 --port 8080"
+
+run = "npm run dev"
 
 [nix]
 channel = "stable-24_05"
 
 [[ports]]
-localPort = 8080
+localPort = 3000
 externalPort = 80
 
 [deployment]
+build = ["sh", "-c", "npm run build"]
+run = ["sh", "-c", "npm run start"]
 deploymentTarget = "cloudrun"
-run = ["sh", "-c", "uvicorn main:app --host 0.0.0.0 --port 8080"]
