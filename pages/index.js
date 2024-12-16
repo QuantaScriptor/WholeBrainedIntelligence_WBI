@@ -1,5 +1,28 @@
 
 import { motion } from 'framer-motion'
+
+import { Line } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 import { useState } from 'react'
 
 export default function Home() {
@@ -68,12 +91,13 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="bg-white/5 backdrop-blur-lg rounded-xl p-6 border border-white/10 shadow-xl"
+                className="space-y-6"
               >
-                <h2 className="text-xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-                  Analysis Results
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-white/5 backdrop-blur-lg rounded-xl p-6 border border-white/10 shadow-xl">
+                  <h2 className="text-xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Latest Analysis
+                  </h2>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   <div className="bg-white/5 rounded-lg p-4">
                     <p className="text-gray-400 text-sm">Complexity Score</p>
                     <p className="text-2xl font-semibold mt-1">
@@ -91,6 +115,23 @@ export default function Home() {
                     <p className="text-2xl font-semibold mt-1">
                       {result.confidence ? `${(result.confidence * 100).toFixed(0)}%` : 'N/A'}
                     </p>
+                  </div>
+                </div>
+                <div className="bg-white/5 backdrop-blur-lg rounded-xl p-6 border border-white/10 shadow-xl">
+                  <h2 className="text-xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                    Analysis History
+                  </h2>
+                  <div className="space-y-4">
+                    {result.history?.map((item, index) => (
+                      <div key={index} className="bg-white/5 p-4 rounded-lg">
+                        <p className="text-sm text-gray-400">Text: {item.text.substring(0, 100)}...</p>
+                        <div className="grid grid-cols-3 gap-4 mt-2">
+                          <p className="text-sm">Score: {item.complexity_score?.toFixed(2)}</p>
+                          <p className="text-sm">Sentiment: {item.sentiment}</p>
+                          <p className="text-sm">Confidence: {(item.confidence * 100).toFixed(0)}%</p>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
               </motion.div>

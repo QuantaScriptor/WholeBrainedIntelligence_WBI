@@ -19,11 +19,24 @@ async def root():
 async def analyze(data: InputData):
     try:
         # Basic analysis example
-        response = {
+        # Store last 5 analyses
+        if not hasattr(app, 'analysis_history'):
+            app.analysis_history = []
+        
+        current_analysis = {
+            "text": data.text,
             "input_length": len(data.text),
             "complexity_score": np.random.random(),  # Placeholder
             "sentiment": np.random.choice(["positive", "negative", "neutral"]),
             "confidence": round(np.random.random(), 2)
+        }
+        
+        app.analysis_history.insert(0, current_analysis)
+        app.analysis_history = app.analysis_history[:5]  # Keep only last 5
+        
+        response = {
+            **current_analysis,
+            "history": app.analysis_history[1:]  # Exclude current analysis
         }
         return response
     except Exception as e:
