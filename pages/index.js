@@ -29,6 +29,22 @@ export default function Home() {
   const [input, setInput] = useState('')
   const [loading, setLoading] = useState(false)
   const [result, setResult] = useState(null)
+  const [filter, setFilter] = useState('all')
+
+  const exportResults = (data) => {
+    const csvContent = "data:text/csv;charset=utf-8," + 
+      "Text,Complexity Score,Sentiment,Confidence\n" +
+      data.map(item => 
+        `"${item.text}",${item.complexity_score},${item.sentiment},${item.confidence}`
+      ).join("\n");
+    const encodedUri = encodeURI(csvContent);
+    const link = document.createElement("a");
+    link.setAttribute("href", encodedUri);
+    link.setAttribute("download", "analysis_results.csv");
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   const analyzeText = async () => {
     if (!input.trim()) return
@@ -121,8 +137,27 @@ export default function Home() {
                   <h2 className="text-xl font-semibold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
                     Analysis History
                   </h2>
+                  <div className="flex justify-between items-center mb-4">
+                    <select 
+                      onChange={(e) => setFilter(e.target.value)}
+                      className="bg-white/5 rounded-lg p-2 text-sm"
+                    >
+                      <option value="all">All Results</option>
+                      <option value="positive">Positive</option>
+                      <option value="negative">Negative</option>
+                      <option value="neutral">Neutral</option>
+                    </select>
+                    <button
+                      onClick={() => exportResults(result.history)}
+                      className="bg-white/5 px-4 py-2 rounded-lg text-sm hover:bg-white/10"
+                    >
+                      Export Results
+                    </button>
+                  </div>
                   <div className="space-y-4">
-                    {result.history?.map((item, index) => (
+                    {result.history?.filter(item => 
+                      filter === 'all' ? true : item.sentiment === filter
+                    ).map((item, index) => (
                       <div key={index} className="bg-white/5 p-4 rounded-lg">
                         <p className="text-sm text-gray-400">Text: {item.text.substring(0, 100)}...</p>
                         <div className="grid grid-cols-3 gap-4 mt-2">
