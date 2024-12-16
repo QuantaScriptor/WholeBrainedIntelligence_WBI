@@ -1,8 +1,13 @@
 
 run = "npm run dev"
+modules = ["python-3.11"]
 
 [nix]
 channel = "stable-24_05"
+
+[[ports]]
+localPort = 80
+externalPort = 8080
 
 [[ports]]
 localPort = 3000
