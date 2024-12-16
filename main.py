@@ -10,6 +10,7 @@ app = FastAPI(title="WholeBrainedIntelligence API")
 class InputData(BaseModel):
     text: str
     features: List[float] = None
+    mode: str = "analyze"  # analyze, simulate, learn, interact
 
 @app.get("/")
 async def root():
@@ -18,27 +19,36 @@ async def root():
 @app.post("/analyze")
 async def analyze(data: InputData):
     try:
-        # Basic analysis example
-        # Store last 5 analyses
-        if not hasattr(app, 'analysis_history'):
-            app.analysis_history = []
-        
+        modes = {
+            "analyze": "Pattern Recognition & Self-Awareness",
+            "simulate": "Counterfactual Simulation",
+            "learn": "Learning from Experience",
+            "interact": "Empathic Interaction"
+        }
+
         current_analysis = {
             "text": data.text,
-            "input_length": len(data.text),
-            "complexity_score": np.random.random(),  # Placeholder
+            "mode": modes.get(data.mode, "analyze"),
+            "complexity_score": round(np.random.random(), 2),
             "sentiment": np.random.choice(["positive", "negative", "neutral"]),
-            "confidence": round(np.random.random(), 2)
+            "confidence": round(np.random.random(), 2),
+            "insights": {
+                "patterns": ["Pattern 1", "Pattern 2"],
+                "predictions": ["Prediction 1", "Prediction 2"],
+                "recommendations": ["Recommendation 1", "Recommendation 2"]
+            }
         }
         
+        if not hasattr(app, 'analysis_history'):
+            app.analysis_history = []
+            
         app.analysis_history.insert(0, current_analysis)
-        app.analysis_history = app.analysis_history[:5]  # Keep only last 5
+        app.analysis_history = app.analysis_history[:5]
         
-        response = {
+        return {
             **current_analysis,
-            "history": app.analysis_history[1:]  # Exclude current analysis
+            "history": app.analysis_history[1:]
         }
-        return response
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
